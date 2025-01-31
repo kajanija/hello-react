@@ -1,0 +1,53 @@
+*{
+  transition: all 0.3s ease-in-out;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body, html, #root {
+  min-height: 100vh;
+}
+body.dark-mode{
+  background-color: rgb(63, 63, 63);
+}
+.div {
+  display: grid;
+  grid-template-rows: max-content max-content;
+  justify-items: center;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+.title {
+  font-size: 45px;
+  text-transform: uppercase;
+  color: rgb(63, 63, 63);
+  margin: 0 0 50px 0;
+}
+.dark-mode .title{
+  color: white;
+}
+.button {
+  padding: 10px 20px;
+  border: 2px solid rgb(63, 63, 63);
+  background-color: rgb(63, 63, 63);
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.dark-mode .button{
+  border: 2px solid white;
+  background-color: white;
+  color: rgb(63, 63, 63);
+}
+.button:hover {
+  background-color: white;
+  color: rgb(63, 63, 63);
+}
+.dark-mode .button:hover{
+  border: 2px solid white;
+  background-color: rgb(63, 63, 63);
+  color: white;
+}
